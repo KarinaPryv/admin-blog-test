@@ -1,0 +1,34 @@
+<form class="admin-form" #addForm="ngForm" (ngSubmit)="!editStatus ? addNewPost(addForm) : saveEditedPost(addForm)">
+    <input type="text" class="input" placeholder="title here..." name="title" [(ngModel)]="post.title" required>
+    <textarea class="input textarea" placeholder="text here..." name="text" [(ngModel)]="post.text" required></textarea>
+    <input type="text" class="input" placeholder="author here..." name="author" [(ngModel)]="post.author" required>
+    <input type="text" class="input" placeholder="image url here..." name="url" [(ngModel)]="post.imgUrl" required>
+    <button type="submit" class="btn btn-dark" [textContent]="!editStatus ? 'Add' : 'Edit'"
+        [disabled]="!addForm.form.valid"></button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Text</th>
+            <th scope="col">Author</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let post of posts">
+            <td scope="row">{{ post.id }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.text }}</td>
+            <td>{{ post.author }}</td>
+            <td>
+                <button class="btn btn-dark" (click)="editPost(post)">Edit</button>
+            </td>
+            <td>
+                <button class="btn btn-dark" (click)="deletePost(post.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

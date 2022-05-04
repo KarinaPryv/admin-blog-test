@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "title": "title1",
+      "text": "some text..",
+      "author": "admin",
+      "imgUrl": "https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=",
+      "id": 1
+    },
+    {
+      "title": "title2",
+      "text": "some text here...",
+      "author": "Karina",
+      "imgUrl": "https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=",
+      "id": 2
+    },
+    {
+      "title": "title3",
+      "text": "some text",
+      "author": "Andrew",
+      "imgUrl": "https://media.istockphoto.com/vectors/abstract-black-stripes-diagonal-background-vector-id1294603953?k=20&m=1294603953&s=612x612&w=0&h=KLAV73oMUFA2ucWMMTOdXT8Vn4LVUsh6NTiXRmlX5ZA=",
+      "id": 3
+    }
+  ]
+}
